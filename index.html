@@ -111,7 +111,7 @@
 
     .tech-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
     .tech-card {
@@ -235,6 +235,7 @@
     footer a:hover { text-decoration: underline; }
 
     @media (max-width: 640px) {
+      .tech-grid { grid-template-columns: 1fr; }
       .pricing-grid { grid-template-columns: 1fr; }
       section { padding: 48px 0; }
     }
@@ -270,7 +271,7 @@
         </div>
         <div class="tech-card">
           <h3>🔒 Безопасность</h3>
-          <p>Статический сайт не имеет базы данных и серверного кода — нечего взламывать. Нет уязвимостей, нет взломов, нет DDoсS.</p>
+          <p>Статический сайт не имеет базы данных и серверного кода — нечего взламывать. Нет уязвимостей, нет взломов, нет DDoS.</p>
         </div>
       </div>
     </div>
