@@ -179,6 +179,14 @@
       border-radius: 6px;
       margin-top: 6px;
     }
+    .timeline-step ul {
+      color: var(--text-dim);
+      font-size: 0.88rem;
+      margin-top: 6px;
+      padding-left: 18px;
+      list-style: disc;
+    }
+    .timeline-step ul li { margin-bottom: 2px; }
 
     .pricing-grid {
       display: grid;
@@ -232,7 +240,7 @@
       font-size: 0.85rem;
     }
     footer a { color: var(--accent-light); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    footer a:hover { text-decoration:underline; }
 
     @media (max-width: 640px) {
       .tech-grid { grid-template-columns: 1fr; }
@@ -320,13 +328,26 @@
       <h2>Запуск за 7–10 дней</h2>
       <div class="timeline">
         <div class="timeline-step">
+          <h3>Бриф и вводные данные</h3>
+          <p>Отправляю бриф — вам нужно заполнить информацию о бизнесе для точной настройки сайта и SEO.</p>
+          <ul>
+            <li>Описание бизнеса, услуги, ценовые категории</li>
+            <li>Информация о специалистах и их квалификации</li>
+            <li>Кейсы и отзывы клиентов</li>
+            <li>Фотографии офиса, команды, города</li>
+            <li>Контакты, логотип, фирменный стиль</li>
+            <li>Конкуренты, которых вы знаете</li>
+          </ul>
+          <span class="tag">1 день</span>
+        </div>
+        <div class="timeline-step">
           <h3>Анализ и проектирование</h3>
           <p>Анализ конкурентов, сбор семантического ядра, генерация дизайн-макета по ТЗ.</p>
           <span class="tag">2–3 дня</span>
         </div>
         <div class="timeline-step">
           <h3>Разработка</h3>
-          <p>Вёрстка на Astro, внедрение микроразметки (Service, FAQ).</p>
+          <p>Адаптивная вёрстка на Astro под 3 брейкпоинта (десктоп, планшет, мобильные), внедрение микроразметки (Service, FAQ, Open Graph).</p>
           <span class="tag">3–4 дня</span>
         </div>
         <div class="timeline-step">
